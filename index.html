@@ -3,86 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Creative Works</title>
+  <title>tiago c esteves</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header / Bio Section -->
-  <header>
-    <h1>Tiago CarvE</h1>
-    <p class="subtitle">Musician • Writer • Visual Artist • Developer</p>
-    <p class="bio">
-      Welcome to my creative archive. Here you will find a curated collection of my music, books, video projects, visual art, and interactive web applications.
-    </p>
-    <nav class="links">
-      <a href="https://github.com/your-username" target="_blank">GitHub</a>
-      <a href="mailto:your.email@example.com">Contact</a>
-      <a href="https://your-username.github.io/journal/" target="_blank">Journal</a>
+  <!-- Sticky Header Navigation -->
+  <header class="navbar">
+    <div class="logo">My Website</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Page Content Sections -->
   <main>
-    <!-- Music Section -->
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to the home section.</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Information about us.</p>
+    </section>
+
     <section id="music">
-      <h2>Music & Audio</h2>
-      <div class="media-container">
-        <!-- SoundCloud Embed Example -->
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&color=%23111111&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
-        </iframe>
-      </div>
+      <h2>Services</h2>
+      <p>Details of services provided.</p>
     </section>
 
-    <!-- Books & Writing Section -->
-    <section id="writing">
-      <h2>Books & Publications</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="assets/book-cover.jpg" alt="Book Cover" class="card-img">
-          <h3>Title of the Book</h3>
-          <p>A short description of the book or article, exploring themes, narrative style, or topic.</p>
-          <a href="#" class="btn" target="_blank">Read Sample (PDF)</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Visual Art & Projects Section -->
-    <section id="art">
-      <h2>Visual Art</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="assets/artwork1.jpg" alt="Art Project" class="card-img">
-          <h3>Art Piece / Series Title</h3>
-          <p>Medium: Digital / Mixed Media (2026)</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Videos Section -->
-    <section id="videos">
-      <h2>Videos & Film</h2>
-      <div class="video-container">
-        <!-- YouTube Embed Example -->
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <!-- Web Apps / Vault Section -->
-    <section id="apps">
-      <h2>Web Apps & Projects</h2>
-      <ul class="project-list">
-        <li>
-          <a href="https://your-username.github.io/app-repo-name/" target="_blank">Interactive Web App 1</a>
-          <span>— Lightweight HTML/JS application hosted from my vault repository.</span>
-        </li>
-      </ul>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Get in touch with us.</p>
     </section>
   </main>
-
-  <footer>
-    <p>© 2026 Your Name. Built simply with HTML & CSS.</p>
-  </footer>
 
 </body>
 </html>
