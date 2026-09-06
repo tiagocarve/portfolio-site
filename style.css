@@ -1,4 +1,6 @@
-/* Base Resets & Variables */
+/* ==========================================================================
+   Base Resets & CSS Variables
+   ========================================================================== */
 :root {
   --bg-color: #fcfcfc;
   --text-main: #111111;
@@ -26,7 +28,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Header & Typography */
+/* ==========================================================================
+   Header & Typography
+   ========================================================================== */
 header {
   margin-bottom: 3.5rem;
 }
@@ -43,7 +47,9 @@ header {
   text-decoration: none;
 }
 
-/* Horizontal Navigation */
+/* ==========================================================================
+   Horizontal Navigation
+   ========================================================================== */
 .horizontal-nav {
   font-family: var(--font-sans);
   font-style: italic;
@@ -65,7 +71,9 @@ header {
   border-bottom: 1px solid var(--text-main);
 }
 
-/* Main Content Typography */
+/* ==========================================================================
+   General Main Content Headings
+   ========================================================================== */
 h2 {
   font-family: var(--font-sans);
   font-size: 1.1rem;
@@ -76,7 +84,45 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Grid Layout for Art/Folio Page */
+/* ==========================================================================
+   About Page (`index.html`)
+   ========================================================================== */
+.bio-container {
+  max-width: 650px;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+}
+
+.bio-container p {
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.text-link {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.text-link:hover {
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Art & Folio Page (`art.html`)
+   ========================================================================== */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -120,7 +166,48 @@ h2 {
   margin-top: 0.25rem;
 }
 
-/* Minimal List Layout for Music Page */
+/* ==========================================================================
+   Writing Page (`writing.html`)
+   ========================================================================== */
+.writing-featured {
+  max-width: 680px;
+}
+
+.article-title {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1.75rem;
+}
+
+.cover-wrapper {
+  margin-bottom: 2rem;
+}
+
+.book-cover {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+}
+
+.article-body {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: #222;
+}
+
+.article-body strong {
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Music Page (`music.html`)
+   ========================================================================== */
 .track-list {
   display: flex;
   flex-direction: column;
@@ -160,7 +247,9 @@ audio {
   margin-top: 0.5rem;
 }
 
-/* Responsive adjustments */
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
 @media (max-width: 600px) {
   body {
     padding: 2.5rem 1.25rem;
