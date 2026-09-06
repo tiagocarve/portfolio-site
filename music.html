@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TIII - Music</title>
+  <title>TIII — Music</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>TIII</h1>
+    <h1 class="site-title"><a href="index.html">TIII</a></h1>
     
     <nav class="horizontal-nav">
       <a href="index.html">about</a> |
@@ -19,20 +19,31 @@
   </header>
 
   <main>
-    <h2>Music & Audio</h2>
+    <h2>Audio & Compositions</h2>
 
-    <section class="audio-list">
-      <article class="track">
-        <h3>Track / Composition Title</h3>
-        <p>Released 2024 — Electroacoustic / Ambient</p>
-        
-        <!-- Self-hosted audio player using your assets/audio/ directory -->
+    <div class="track-list">
+      <article class="track-item">
+        <div class="track-meta">
+          <span class="track-title">01. Resonance in White</span>
+          <span class="track-details">Ambient — 04:12</span>
+        </div>
         <audio controls>
           <source src="assets/audio/track-01.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </article>
-    </section>
+
+      <article class="track-item">
+        <div class="track-meta">
+          <span class="track-title">02. Fragmented Tapes</span>
+          <span class="track-details">Field Recording — 02:45</span>
+        </div>
+        <audio controls>
+          <source src="assets/audio/track-02.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+    </div>
   </main>
 </body>
 </html>
