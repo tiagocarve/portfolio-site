@@ -47,6 +47,24 @@ header {
   text-decoration: none;
 }
 
+/* Header Intro Styling */
+.site-tagline {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: 0.02em;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.site-welcome {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 1.75rem;
+}
+
 /* ==========================================================================
    Horizontal Navigation
    ========================================================================== */
