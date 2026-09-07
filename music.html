@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TIII — Music</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1 class="site-title"><a href="index.html">João Tiago C Esteves</a></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIII — Music</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="site-title"><a href="index.html">João Tiago C Esteves</a></h1>
+      <p class="site-tagline">Musician • Writer • Visual Artist • Developer</p>
+      <nav class="horizontal-nav">
+        <a href="index.html">about</a> |
+        <a href="art.html">art</a> | 
+        <a href="writing.html">writing</a> |
+        <a href="music.html" class="active">music</a>
+      </nav>
+    </header>
 
-    <p class="site-tagline">Musician • Writer • Visual Artist • Developer</p>
-    
-    <nav class="horizontal-nav">
-      <a href="index.html">about</a> |
-      <a href="art.html">art</a> |
-      <a href="writing.html">writing</a> |
-      <a href="music.html" class="active">music</a>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Audio & Compositions</h2>
-
-    <div class="track-list">
-      <article class="track-item">
-        <div class="track-meta">
-          <span class="track-title">01. Resonance in White</span>
-          <span class="track-details">Ambient — 04:12</span>
+    <main>
+      <section class="bio-container">
+        
+        <div class="project-list-tight">
+          <a href="katgraben.html" class="text-link">katzgraben</a><br>
+          <a href="kafka.html" class="text-link">kafka</a><br>
+          <a href="guttapercha.html" class="text-link">guttapercha</a><br>
+          <a href="tiago-carve.html" class="text-link">tiago.carve</a><br>
+          <a href="nib.html" class="text-link">NIB</a>
         </div>
-        <audio controls>
-          <source src="assets/audio/track-01.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </article>
 
-      <article class="track-item">
-        <div class="track-meta">
-          <span class="track-title">02. Fragmented Tapes</span>
-          <span class="track-details">Field Recording — 02:45</span>
-        </div>
-        <audio controls>
-          <source src="assets/audio/track-02.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </article>
-    </div>
-  </main>
-</body>
+        
+      </section>
+    </main>
+  </body>
 </html>
