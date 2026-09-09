@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIII — NIB</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
     <header>
         <h1 class="site-title"><a href="index.html">João Tiago C Esteves</a></h1>
         <p class="site-tagline">Musician • Writer • Visual Artist • Developer</p>
         <nav class="horizontal-nav">
             <a href="index.html">about</a> |
-            <a href="art.html">art</a> |
+            <a href="art.html">art</a> | 
             <a href="writing.html">writing</a> |
             <a href="music.html" class="active">music</a>
         </nav>
@@ -27,37 +25,37 @@
                 <a href="music.html" class="text-link">← back to music</a>
             </p>
 
-            <!-- 4-Column Responsive Music Grid -->
+            <h2 class="article-title" style="margin-bottom: 1rem;">NIB</h2>
+            
+            <p style="margin-bottom: 2rem; color: var(--text-muted); line-height: 1.6;">
+                Project releases and audio streams.
+            </p>
+
+            <!-- 4-Column Responsive Music Grid matching Katzgraben/Kafka -->
             <div class="music-grid">
 
-                <!-- Release 1 -->
                 <article class="music-card">
-                    <!-- Square Bandcamp Embed Player (using the square artwork player configuration) -->
-                    <div class="img-wrapper" style="width: 130px; height: 130px; margin: 0 auto 0.75rem auto;">
-                        <iframe style="border: 0; width: 130px; height: 130px;"
-                            src="https://bandcamp.com/EmbeddedPlayer/album=4026785978/size=large/bgcol=ffffff/linkcol=333333/minimal=true/transparent=true/"
-                            seamless><a href="https://nibrecords.bandcamp.com/album/corti-cose-1">CORTI-COSE 1 by FILIPE
-                                COELHO+TIAGO ESTEVES</a></iframe>
-                    </div>
-                    <h3 style="font-size: 0.9rem; font-weight: normal; margin-top: 0.5rem;">Release Title 1</h3>
-                    <p style="font-size: 0.8rem; color: var(--text-muted);">2026</p>
+                    <a href="https://yourlabel.bandcamp.com/album/your-release-slug" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="img-wrapper">
+                            <img src="assets/images/nib_release1.jpg" alt="Release Title 1" />
+                        </div>
+                        <h3>Release Title 1</h3>
+                        <p>2026</p>
+                    </a>
                 </article>
 
-                <!-- Release 2 (Duplicate pattern for more items) -->
                 <article class="music-card">
-                    <div class="img-wrapper" style="width: 130px; height: 130px; margin: 0 auto 0.75rem auto;">
-                        <iframe style="border: 0; width: 130px; height: 130px;"
-                            src="https://bandcamp.com/EmbeddedPlayer/album=1818137275/size=large/bgcol=ffffff/linkcol=333333/minimal=true/transparent=true/"
-                            seamless><a href="https://nibrecords.bandcamp.com/album/corti-cose-2-2">CORTI-COSE 2 by
-                                FILIPE COELHO+TIAGO ESTEVES+JOSÉ MOUTINHO</a></iframe>
-                    </div>
-                    <h3 style="font-size: 0.9rem; font-weight: normal; margin-top: 0.5rem;">Release Title 2</h3>
-                    <p style="font-size: 0.8rem; color: var(--text-muted);">2026</p>
+                    <a href="https://yourlabel.bandcamp.com/album/your-release-slug-2" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="img-wrapper">
+                            <img src="assets/images/nib_release2.jpg" alt="Release Title 2" />
+                        </div>
+                        <h3>Release Title 2</h3>
+                        <p>2026</p>
+                    </a>
                 </article>
 
             </div>
         </section>
     </main>
 </body>
-
 </html>
