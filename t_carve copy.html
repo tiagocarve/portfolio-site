@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIII — Guttapercha</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1 class="site-title"><a href="index.html">João Tiago C Esteves</a></h1>
+        <p class="site-tagline">Musician • Writer • Visual Artist • Developer</p>
+        <nav class="horizontal-nav">
+            <a href="index.html">about</a> |
+            <a href="art.html">art</a> | 
+            <a href="writing.html">writing</a> |
+            <a href="music.html" class="active">music</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bio-container">
+            <!-- Back link to the main music hub -->
+            <p style="margin-bottom: 2rem;">
+                <a href="music.html" class="text-link">← back to music</a>
+            </p>
+
+            <!-- 4-Column Responsive Music Grid with Hover Overlays -->
+            <div class="music-grid">
+
+                <a href="https://gutta-percha.bandcamp.com/track/oto-mix-max" target="_blank" class="music-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/guttapercha_otomixmax.jpg" alt="oto-mix-max" />
+                    </div>
+                    <div class="music-overlay">
+                        <span class="music-title">oto-mix-max</span>
+                        <span class="music-year">2020</span>
+                    </div>
+                </a>
+
+                <!-- Add additional gutterpercha releases here following the same card structure -->
+                <a href="https://gutta-percha.bandcamp.com/track/ohm-gtrs-4" target="_blank" class="music-card">
+                    <div class="img-wrapper">
+                        <img src="assets/images/guttapercha_ohm-gtrs 4.jpg" alt="oto-mix-max" />
+                    </div>
+                    <div class="music-overlay">
+                        <span class="music-title">ohm-gtrs 4</span>
+                        <span class="music-year">2020</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
