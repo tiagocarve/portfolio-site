@@ -6,6 +6,37 @@
     <title>TIII — Triptychs: Time Out</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="nav.js"></script>
+    <style>
+      /* Triptych layout: 3 columns horizontally, stacking on smaller screens */
+      .triptych-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+      @media (max-width: 768px) {
+        .triptych-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      /* Uniform aspect ratio video wrapper */
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #000;
+        overflow: hidden;
+        border: 1px solid #e0e0e0;
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -24,22 +55,22 @@
         <p style="font-size: 0.9rem; color: #666; margin-bottom: 2rem;">triptychs — objects + dreams</p>
 
         <!-- Three Video Loops Container -->
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2.5rem;">
-            <div style="flex: 1; min-width: 280px; background: #000;">
-                <iframe allowfullscreen frameborder="0" style="width: 100%; aspect-ratio: 16/9; display: block;" src="https://player.vimeo.com/video/249959245?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;autopause=0&amp;loop=1"></iframe>
+        <div class="triptych-grid">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/249959245?h=0&amp;badge=0&amp;autopause=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div style="flex: 1; min-width: 280px; background: #000;">
-                <iframe allowfullscreen frameborder="0" style="width: 100%; aspect-ratio: 16/9; display: block;" src="https://player.vimeo.com/video/249961528?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;autopause=0&amp;loop=1"></iframe>
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/249961528?h=0&amp;badge=0&amp;autopause=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div style="flex: 1; min-width: 280px; background: #000;">
-                <iframe allowfullscreen frameborder="0" style="width: 100%; aspect-ratio: 16/9; display: block;" src="https://player.vimeo.com/video/249958131?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;autopause=0&amp;loop=1"></iframe>
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/249958131?h=0&amp;badge=0&amp;autopause=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <!-- Project Statement / Description -->
-        <div style="font-size: 0.95rem; line-height: 1.7; color: #333; display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 3rem;">
+        <div style="font-size: 0.95rem; line-height: 1.7; color: #333; display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 3rem; max-width: 700px;">
             <p>
-                Part of the triptych series combining three independent short looped videos with three looped sounds, creating a continuously shifting generative experience.
+                Part of the triptych series combining three independent short looped videos with three looped sounds, creating a continuously shifting generative experience[cite: 1].
             </p>
         </div>
 
