@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const path = window.location.pathname.toLowerCase();
     
-    // Determine which main nav item should be active based on URL keywords
     let activePage = "";
     
     if (path.includes("art")) {
@@ -10,24 +9,25 @@ document.addEventListener("DOMContentLoaded", function() {
         activePage = "writing";
     } else if (path.includes("music") || path.includes("t-carve") || path.includes("omegts") || path.includes("meds") || path.includes("snd") || path.includes("spt") || path.includes("img")) {
         activePage = "music";
-    } else if (path.includes("phono")) {
+    } else if (path.includes("phonography")) {
         activePage = "phonography";
+    } else if (path.includes("video") || path.includes("tsop") || path.includes("silent") || path.includes("triptych")) {
+        activePage = "video";
     } else {
-        activePage = "index"; // default for about/index
+        activePage = "index";
     }
 
-    // Build the nav HTML with the correct active class applied
     const navHTML = `
         <nav class="horizontal-nav">
             <a href="index.html" ${activePage === "index" ? 'class="active"' : ''}>about</a> |
             <a href="art.html" ${activePage === "art" ? 'class="active"' : ''}>art</a> | 
             <a href="writing.html" ${activePage === "writing" ? 'class="active"' : ''}>writing</a> |
             <a href="music.html" ${activePage === "music" ? 'class="active"' : ''}>music</a> |
-            <a href="phonography.html" ${activePage === "phonography" ? 'class="active"' : ''}>phonography</a>
+            <a href="phonography.html" ${activePage === "phonography" ? 'class="active"' : ''}>phonography</a> |
+            <a href="video.html" ${activePage === "video" ? 'class="active"' : ''}>video</a>
         </nav>
     `;
 
-    // Insert into the placeholder
     const container = document.getElementById("nav-container");
     if (container) {
         container.innerHTML = navHTML;
