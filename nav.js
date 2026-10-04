@@ -3,16 +3,16 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let activePage = "";
     
-    if (path.includes("installations")) {
-        activePage = "installations";
-    } else if (path.includes("writing")) {
-        activePage = "writing";
-    } else if (path.includes("music") || path.includes("t-carve") || path.includes("omegts") || path.includes("meds") || path.includes("snd") || path.includes("spt") || path.includes("img")) {
-        activePage = "music";
-    } else if (path.includes("phonography")) {
-        activePage = "phonography";
-    } else if (path.includes("video") || path.includes("tsop") || path.includes("silent") || path.includes("triptych")) {
-        activePage = "video";
+    if (path.includes("space")) {
+        activePage = "space";
+    } else if (path.includes("texts")) {
+        activePage = "texts";
+    } else if (path.includes("sonics") || path.includes("t-carve") || path.includes("corticose") || path.includes("omegts") || path.includes("meds") || path.includes("snd") || path.includes("spt") || path.includes("img")) {
+        activePage = "sonics";
+    } else if (path.includes("field") || path.includes("aporee")) {
+        activePage = "field";
+    } else if (path.includes("lens") || path.includes("tsop") || path.includes("silent") || path.includes("triptych")) {
+        activePage = "lens";
     } else if (path.includes("gigs")) {
         activePage = "gigs";
     } else {
@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     const navHTML = `
-        <nav class="horizontal-nav">
-            <a href="index.html" ${activePage === "index" ? 'class="active"' : ''}>about</a> |
-            <a href="installations.html" ${activePage === "installations" ? 'class="active"' : ''}>installations</a> | 
-            <a href="writing.html" ${activePage === "writing" ? 'class="active"' : ''}>writing</a> |
-            <a href="music.html" ${activePage === "music" ? 'class="active"' : ''}>music</a> |
-            <a href="phonography.html" ${activePage === "phonography" ? 'class="active"' : ''}>phonography</a> |
-            <a href="video.html" ${activePage === "video" ? 'class="active"' : ''}>video</a> |
-            <a href="gigs.html" ${activePage === "gigs" ? 'class="active"' : ''}>gigs</a>
-        </nav>
+    <nav class="horizontal-nav">
+        <a href="index.html" ${activePage === "index" ? 'class="active"' : ''}>profile</a> |
+        <a href="texts.html" ${activePage === "texts" ? 'class="active"' : ''}>texts</a> |
+        <a href="sonics.html" ${activePage === "sonics" ? 'class="active"' : ''}>sonics</a> |
+        <a href="field.html" ${activePage === "field" ? 'class="active"' : ''}>field</a> |
+        <a href="lens.html" ${activePage === "lens" ? 'class="active"' : ''}>lens</a> |
+        <a href="space.html" ${activePage === "space" ? 'class="active"' : ''}>space</a> |
+        <a href="gigs.html" ${activePage === "gigs" ? 'class="active"' : ''}>gigs</a>
+    </nav>
     `;
 
     const container = document.getElementById("nav-container");
