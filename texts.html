@@ -1,38 +1,94 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const path = window.location.pathname.toLowerCase();
-    
-    let activePage = "";
-    
-    if (path.includes("space")) {
-        activePage = "space";
-    } else if (path.includes("texts")) {
-        activePage = "texts";
-    } else if (path.includes("sonics") || path.includes("t-carve") || path.includes("corticose") || path.includes("omegts") || path.includes("meds") || path.includes("snd") || path.includes("spt") || path.includes("img")) {
-        activePage = "sonics";
-    } else if (path.includes("field") || path.includes("aporee")) {
-        activePage = "field";
-    } else if (path.includes("lens") || path.includes("tsop") || path.includes("silent") || path.includes("triptych")) {
-        activePage = "lens";
-    } else if (path.includes("gigs")) {
-        activePage = "gigs";
-    } else {
-        activePage = "index";
-    }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIII — Writing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="nav.js"></script>
+    <style>
+      /* Compact phonography-style grid with natural aspect ratios and hover captions */
+      .writing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1.25rem;
+        margin-top: 2rem;
+        align-items: start;
+      }
+      .book-item {
+        position: relative;
+        overflow: hidden;
+        background: #f4f4f4;
+        border: 1px solid #e0e0e0;
+      }
+      .book-cover {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: opacity 0.2s ease;
+      }
+      .book-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        color: #fff;
+        padding: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        box-sizing: border-box;
+      }
+      .book-item:hover .book-overlay {
+        opacity: 1;
+      }
+      .book-title {
+        font-weight: 600;
+        font-size: 0.8rem;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 0.25rem;
+      }
+      .book-title:hover {
+        text-decoration: underline;
+      }
+      .book-meta {
+        font-size: 0.7rem;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="site-title"><a href="index.html">João Tiago C Esteves</a></h1>
+      <p class="site-tagline">Musician • Writer • Visual Artist • Developer</p>
+      <div id="nav-container"></div>
+    </header>
 
-    const navHTML = `
-    <nav class="horizontal-nav">
-        <a href="index.html" ${activePage === "index" ? 'class="active"' : ''}>profile</a> |
-        <a href="texts.html" ${activePage === "texts" ? 'class="active"' : ''}>texts</a> |
-        <a href="sonics.html" ${activePage === "sonics" ? 'class="active"' : ''}>sonics</a> |
-        <a href="field.html" ${activePage === "field" ? 'class="active"' : ''}>field</a> |
-        <a href="lens.html" ${activePage === "lens" ? 'class="active"' : ''}>lens</a> |
-        <a href="space.html" ${activePage === "space" ? 'class="active"' : ''}>space</a> |
-        <a href="gigs.html" ${activePage === "gigs" ? 'class="active"' : ''}>gigs</a>
-    </nav>
-    `;
+    <main>
+      <section class="bio-container">
 
-    const container = document.getElementById("nav-container");
-    if (container) {
-        container.innerHTML = navHTML;
-    }
-});
+
+        <div class="writing-grid">
+          
+          <!-- Book 1 -->
+          <div class="book-item">
+            <img src="assets/images/book_twinpeaks28fragmentos.png" alt="Twin Peaks: 28 Fragmentos" class="book-cover" />
+            <div class="book-overlay">
+              <a href="book_twinpeaks.html" class="book-title">Twin Peaks: 28 Fragmentos</a>
+              <div class="book-meta">2026 / Looming Objects</div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
