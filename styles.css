@@ -431,3 +431,19 @@
   background-color: #111;
   color: #fff;
 }
+
+.aporee-map-wrapper {
+  width: 100%;
+  max-width: 600px; /* Adjust maximum width to fit your article column */
+  margin: 1.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.aporee-map-wrapper iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  display: block;
+}
