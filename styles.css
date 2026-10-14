@@ -432,33 +432,27 @@
   color: #fff;
 }
 
-.aporee-list {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0;
+.aporee-portal {
+  border-left: 2px solid #111;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin: 2rem 0;
 }
 
-.aporee-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid #eee;
-  font-size: 0.95rem;
-}
-
-.sound-title {
-  color: #222;
-}
-
-.sound-link {
+.portal-tag {
   font-family: monospace;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
   color: #666;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.sound-link:hover {
-  color: #000;
-  text-decoration: underline;
+.aporee-portal h3 {
+  margin: 0.4rem 0 0.8rem 0;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.aporee-portal p {
+  margin-bottom: 0.8rem;
+  color: #333;
 }
